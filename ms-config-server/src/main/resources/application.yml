@@ -1,0 +1,12 @@
+server:
+  port: 7070
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kiohunter12/DAD-2024.git # ruta del repositorio git
+          searchPaths: config-data
+          default-label: main
